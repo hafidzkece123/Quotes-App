@@ -46,16 +46,16 @@ class _HomePageState extends State<HomePage> {
   ];
 
   List<String> img = [
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Thomas_Edison2.jpg/1200px-Thomas_Edison2.jpg"
-        "https://upload.wikimedia.org/wikipedia/en/thumb/1/1e/C.s.lewis3.JPG/220px-C.s.lewis3.JPG"
-        "https://upload.wikimedia.org/wikipedia/commons/1/14/Nelson_Mandela-2008_%28edit%29.jpg"
-        "https://static.toiimg.com/photo/71402733.cms"
-        "https://assets-a1.kompasiana.com/items/album/2019/11/16/20191115-220536-5dcfbb48097f3661aa4a8592.jpg"
-        "https://upload.wikimedia.org/wikipedia/commons/2/20/Brigham_Young_by_Charles_William_Carter.jpg"
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Malcolm_X_NYWTS_2a.jpg/1200px-Malcolm_X_NYWTS_2a.jpg"
-        "https://static.ussfeed.com/wp-content/uploads/2020/10/1-41.jpg"
-        "https://upload.wikimedia.org/wikipedia/commons/e/ef/John_Dewey_cph.3a51565.jpg"
-        "https://static.wixstatic.com/media/d168a6_1ab15886237f447ca33d69287f24cd1e.jpg/v1/fill/w_290,h_210,al_c,q_80,usm_0.66_1.00_0.01/d168a6_1ab15886237f447ca33d69287f24cd1e.webp"
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Thomas_Edison2.jpg/1200px-Thomas_Edison2.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/thumb/1/1e/C.s.lewis3.JPG/220px-C.s.lewis3.JPG",
+    "https://upload.wikimedia.org/wikipedia/commons/1/14/Nelson_Mandela-2008_%28edit%29.jpg"
+        "https://static.toiimg.com/photo/71402733.cms",
+    "https://assets-a1.kompasiana.com/items/album/2019/11/16/20191115-220536-5dcfbb48097f3661aa4a8592.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/2/20/Brigham_Young_by_Charles_William_Carter.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Malcolm_X_NYWTS_2a.jpg/1200px-Malcolm_X_NYWTS_2a.jpg",
+    "https://static.ussfeed.com/wp-content/uploads/2020/10/1-41.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/e/ef/John_Dewey_cph.3a51565.jpg",
+    "https://static.wixstatic.com/media/d168a6_1ab15886237f447ca33d69287f24cd1e.jpg/v1/fill/w_290,h_210,al_c,q_80,usm_0.66_1.00_0.01/d168a6_1ab15886237f447ca33d69287f24cd1e.webp"
   ];
 
   @override

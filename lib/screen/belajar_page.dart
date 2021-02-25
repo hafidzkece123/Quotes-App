@@ -44,16 +44,16 @@ class _BelajarPageState extends State<BelajarPage> {
     "saya tidak tahu sumbernya"
   ];
   List<String> imgBelajar = [
-    "https://upload.wikimedia.org/wikipedia/commons/1/14/Nelson_Mandela-2008_%28edit%29.jpg"
-        "https://static.toiimg.com/photo/71402733.cms"
-        "assets/images/3.jpg"
-        "assets/images/4.jpg",
-    "assets/images/5.jpg",
-    "assets/images/6.jpg",
-    "assets/images/7.jpg",
-    "assets/images/8.jpg",
-    "assets/images/9.jpg",
-    "assets/images/10.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/1/14/Nelson_Mandela-2008_%28edit%29.jpg",
+    "https://static.toiimg.com/photo/71402733.cms",
+    "https://upload.wikimedia.org/wikipedia/commons/1/14/Nelson_Mandela-2008_%28edit%29.jpg",
+    "https://dux7id0k7hacn.cloudfront.net/as/assets-mem-com/cmi/9/3/1/4/5794139/20131230_105848365_0_orig.jpg/-/harold-whitman-new-iberia-la-obituary.jpg",
+    "https://e8x4d3t2.rocketcdn.me/wp-content/uploads/2013/09/Brian-Dyson-1.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/f/fd/Richard_Marcinko_LCDR_US_Navy.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/f/fd/Richard_Marcinko_LCDR_US_Navy.jpg",
+    "https://cdn.britannica.com/s:800x450,c:crop/28/172728-138-6FCE9343/overview-Franklin-D-Roosevelt.jpg",
+    "https://static.toiimg.com/photo/71402733.cms",
+    "https://s3.amazonaws.com/media.briantracy.com/about/brian-about.jpg"
   ];
 
   @override
@@ -95,7 +95,7 @@ class _BelajarPageState extends State<BelajarPage> {
             fit: BoxFit.fill,
             colorFilter: ColorFilter.mode(
                 Colors.black.withOpacity(0.5), BlendMode.luminosity),
-            image: AssetImage(backGambar)),
+            image: NetworkImage(backGambar)),
       ),
     );
   }

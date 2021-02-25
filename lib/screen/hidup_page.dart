@@ -45,16 +45,16 @@ class _HidupPageState extends State<HidupPage> {
     "Brian Tracy"
   ];
   List<String> imgHidup = [
-    "https://www.dymocks.com.au/getmedia/c52827ac-4d7a-49d7-8fde-44ed57f2dc05/wayne-dyer.jpg.aspx?width=400&height=600&ext=.jpg"
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0OAsgtlhr4G0HYW6BM9nx9RcIKG9N7hT0SA&usqp=CAU"
-        "https://upload.wikimedia.org/wikipedia/commons/7/75/Napoleon_Hill_headshot.jpg"
-        "https://dux7id0k7hacn.cloudfront.net/as/assets-mem-com/cmi/9/3/1/4/5794139/20131230_105848365_0_orig.jpg/-/harold-whitman-new-iberia-la-obituary.jpg"
-        "https://e8x4d3t2.rocketcdn.me/wp-content/uploads/2013/09/Brian-Dyson-1.jpg"
-        "https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5e75465a10380d0006bdcb9f%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D1089%26cropX2%3D2195%26cropY1%3D4%26cropY2%3D1109"
-        "https://upload.wikimedia.org/wikipedia/en/f/fd/Richard_Marcinko_LCDR_US_Navy.jpg"
-        "https://cdn.britannica.com/s:800x450,c:crop/28/172728-138-6FCE9343/overview-Franklin-D-Roosevelt.jpg"
-        "https://static.toiimg.com/photo/71402733.cms"
-        "https://s3.amazonaws.com/media.briantracy.com/about/brian-about.jpg"
+    "https://www.dymocks.com.au/getmedia/c52827ac-4d7a-49d7-8fde-44ed57f2dc05/wayne-dyer.jpg.aspx?width=400&height=600&ext=.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0OAsgtlhr4G0HYW6BM9nx9RcIKG9N7hT0SA&usqp=CAU",
+    "https://upload.wikimedia.org/wikipedia/commons/7/75/Napoleon_Hill_headshot.jpg",
+    "https://dux7id0k7hacn.cloudfront.net/as/assets-mem-com/cmi/9/3/1/4/5794139/20131230_105848365_0_orig.jpg/-/harold-whitman-new-iberia-la-obituary.jpg",
+    "https://e8x4d3t2.rocketcdn.me/wp-content/uploads/2013/09/Brian-Dyson-1.jpg",
+    "https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5e75465a10380d0006bdcb9f%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D1089%26cropX2%3D2195%26cropY1%3D4%26cropY2%3D1109",
+    "https://upload.wikimedia.org/wikipedia/en/f/fd/Richard_Marcinko_LCDR_US_Navy.jpg",
+    "https://cdn.britannica.com/s:800x450,c:crop/28/172728-138-6FCE9343/overview-Franklin-D-Roosevelt.jpg",
+    "https://static.toiimg.com/photo/71402733.cms",
+    "https://s3.amazonaws.com/media.briantracy.com/about/brian-about.jpg"
   ];
 
   @override
@@ -107,7 +107,7 @@ class _HidupPageState extends State<HidupPage> {
             fit: BoxFit.fill,
             colorFilter: ColorFilter.mode(
                 Colors.black.withOpacity(0.5), BlendMode.luminosity),
-            image: AssetImage(backHidup)),
+            image: NetworkImage(backHidup)),
       ),
     );
   }
