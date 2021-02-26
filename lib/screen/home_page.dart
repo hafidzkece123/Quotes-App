@@ -48,8 +48,8 @@ class _HomePageState extends State<HomePage> {
   List<String> img = [
     "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Thomas_Edison2.jpg/1200px-Thomas_Edison2.jpg",
     "https://upload.wikimedia.org/wikipedia/en/thumb/1/1e/C.s.lewis3.JPG/220px-C.s.lewis3.JPG",
-    "https://upload.wikimedia.org/wikipedia/commons/1/14/Nelson_Mandela-2008_%28edit%29.jpg"
-        "https://static.toiimg.com/photo/71402733.cms",
+    "https://upload.wikimedia.org/wikipedia/commons/1/14/Nelson_Mandela-2008_%28edit%29.jpg",
+    "https://static.toiimg.com/photo/71402733.cms",
     "https://assets-a1.kompasiana.com/items/album/2019/11/16/20191115-220536-5dcfbb48097f3661aa4a8592.jpg",
     "https://upload.wikimedia.org/wikipedia/commons/2/20/Brigham_Young_by_Charles_William_Carter.jpg",
     "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Malcolm_X_NYWTS_2a.jpg/1200px-Malcolm_X_NYWTS_2a.jpg",
