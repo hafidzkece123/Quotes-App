@@ -60,186 +60,190 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return widget(
+      child: Column(
 //      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
 //        Row Button
-        Row(
-          children: <Widget>[
-            Expanded(
-              child: Padding(
-                padding: EdgeInsets.only(left: 5.0, right: 5.0, top: 5.0),
-                child: FlatButton(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20.0),
-                      side: BorderSide(color: Color(0xff00D1FF))),
-                  color: Color(0xff00D1FF),
-                  child: Text(
-                    'Belajar',
-                    style: TextStyle(fontSize: 18.0, color: Colors.white),
-                  ),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => BelajarPage()));
-                  },
-                ),
-              ),
-            ),
-            Expanded(
-              child: Padding(
-                padding: EdgeInsets.only(right: 5.0, top: 5.0),
-                child: FlatButton(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20.0),
-                      side: BorderSide(color: Color(0xff00D1FF))),
-                  color: Color(0xff00D1FF),
-                  child: Text(
-                    'Hidup',
-                    style: TextStyle(fontSize: 18.0, color: Colors.white),
-                  ),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => HidupPage()));
-                  },
-                ),
-              ),
-            ),
-          ],
-        ),
-
-        SizedBox(height: 15),
-
-//        Headr Content Whit Notif
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8.0),
-          child: Container(
-            height: MediaQuery.of(context).size.width - 176,
-            width: MediaQuery.of(context).size.width - 000,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(
-                    bottomRight: Radius.circular(15.0),
-                    bottomLeft: Radius.circular(15.0),
-                    topLeft: Radius.circular(15.0),
-                    topRight: Radius.circular(15.0)),
-                boxShadow: [
-                  BoxShadow(
-                      blurRadius: 6.0,
-                      offset: Offset(0.0, 2.0),
-                      color: Colors.black26)
-                ],
-                image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: NetworkImage(
-                        'https://baxcompany.com/wp-content/uploads/2017/08/background-quotes-1024x683.jpg'))),
-            child: Column(
-              children: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.only(top: 170.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.only(left: 10.0),
-                        child: Text("AYO, Tetap Semangat",
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.w500)),
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: <Widget>[
-                          Tooltip(
-                            message: "Hai",
-                            child: IconButton(
-                                color: Colors.white,
-                                icon: Icon(Icons.info_outline),
-                                onPressed: () {
-                                  _showDialogEditLocation(context);
-                                }),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
-
-//        Text
-        Padding(
-          padding: const EdgeInsets.only(left: 15.0, top: 15),
-          child: Text(
-            "Top Search",
-            style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-          ),
-        ),
-
-//        list Horizontal
-        Container(
-          decoration: BoxDecoration(
-            //untuk Border Radius
-            borderRadius: BorderRadius.circular(15.0),
-          ),
-          height: MediaQuery.of(context).size.height - 500,
-          child: Column(
+          Row(
             children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.only(top: 10.0),
-                child: Container(
-//                    padding: EdgeInsets.symmetric(horizontal: 16),
-                    height: 250,
-                    child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemCount: title.length,
-                        itemBuilder: (context, index) {
-                          final nama = title[index].toString();
-                          final deskripsi = subTitle[index].toString();
-                          final source = sourceName[index].toString();
-                          final gambar = img[index].toString();
-                          return Container(
-                            margin: EdgeInsets.symmetric(horizontal: 10.0),
-                            width: 400,
-                            decoration: BoxDecoration(
-                              //untuk Border Radius
-                              borderRadius: BorderRadius.circular(15.0),
-                              image: DecorationImage(
-                                  fit: BoxFit.fill,
-                                  colorFilter: ColorFilter.mode(
-                                      //withOpacity itu adalah ketebalan warna yang kita berikan
-                                      Colors.black.withOpacity(0.5),
-                                      BlendMode.luminosity),
-                                  image: AssetImage(gambar)),
-                            ),
-                            height: 300.0,
-                            padding: EdgeInsets.only(top: 15.0, left: 10),
-                            child: GestureDetector(
-                              child: Stack(
-                                children: <Widget>[
-                                  Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: Column(
-                                      children: <Widget>[
-                                        Container(
-                                          child: topContent(
-                                              nama, deskripsi, source),
-                                        )
-                                      ],
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ),
-                          );
-                        })),
+              Expanded(
+                child: Padding(
+                  padding: EdgeInsets.only(left: 5.0, right: 5.0, top: 5.0),
+                  child: FlatButton(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20.0),
+                        side: BorderSide(color: Color(0xff00D1FF))),
+                    color: Color(0xff00D1FF),
+                    child: Text(
+                      'Belajar',
+                      style: TextStyle(fontSize: 18.0, color: Colors.white),
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => BelajarPage()));
+                    },
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: EdgeInsets.only(right: 5.0, top: 5.0),
+                  child: FlatButton(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20.0),
+                        side: BorderSide(color: Color(0xff00D1FF))),
+                    color: Color(0xff00D1FF),
+                    child: Text(
+                      'Hidup',
+                      style: TextStyle(fontSize: 18.0, color: Colors.white),
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => HidupPage()));
+                    },
+                  ),
+                ),
               ),
             ],
           ),
-        )
-      ],
+
+          SizedBox(height: 15),
+
+//        Headr Content Whit Notif
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            child: Container(
+              height: MediaQuery.of(context).size.width - 000,
+              width: MediaQuery.of(context).size.width - 000,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                      bottomRight: Radius.circular(15.0),
+                      bottomLeft: Radius.circular(15.0),
+                      topLeft: Radius.circular(15.0),
+                      topRight: Radius.circular(15.0)),
+                  boxShadow: [
+                    BoxShadow(
+                        blurRadius: 6.0,
+                        offset: Offset(0.0, 2.0),
+                        color: Colors.black26)
+                  ],
+                  image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image: NetworkImage(
+                          'https://baxcompany.com/wp-content/uploads/2017/08/background-quotes-1024x683.jpg'))),
+              child: Column(
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.only(top: 170.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.only(left: 10.0),
+                          child: Text("AYO, Tetap Semangat",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w500)),
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: <Widget>[
+                            Tooltip(
+                              message: "Hai",
+                              child: IconButton(
+                                  color: Colors.white,
+                                  icon: Icon(Icons.info_outline),
+                                  onPressed: () {
+                                    _showDialogEditLocation(context);
+                                  }),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+
+//        Text
+          Padding(
+            padding: const EdgeInsets.only(left: 15.0, top: 15),
+            child: Text(
+              "Top Search",
+              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+            ),
+          ),
+
+//        list Horizontal
+          Container(
+            decoration: BoxDecoration(
+              //untuk Border Radius
+              borderRadius: BorderRadius.circular(15.0),
+            ),
+            height: MediaQuery.of(context).size.height - 000,
+            child: Column(
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.only(top: 10.0),
+                  child: Container(
+//                    padding: EdgeInsets.symmetric(horizontal: 16),
+                      height: 250,
+                      child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: title.length,
+                          itemBuilder: (context, index) {
+                            final nama = title[index].toString();
+                            final deskripsi = subTitle[index].toString();
+                            final source = sourceName[index].toString();
+                            final gambar = img[index].toString();
+                            return Container(
+                              margin: EdgeInsets.symmetric(horizontal: 10.0),
+                              width: 400,
+                              decoration: BoxDecoration(
+                                //untuk Border Radius
+                                borderRadius: BorderRadius.circular(15.0),
+                                image: DecorationImage(
+                                    fit: BoxFit.fill,
+                                    colorFilter: ColorFilter.mode(
+                                        //withOpacity itu adalah ketebalan warna yang kita berikan
+                                        Colors.black.withOpacity(0.5),
+                                        BlendMode.luminosity),
+                                    image: NetworkImage(gambar)),
+                              ),
+                              height: 300.0,
+                              padding: EdgeInsets.only(top: 15.0, left: 10),
+                              child: GestureDetector(
+                                child: Stack(
+                                  children: <Widget>[
+                                    Padding(
+                                      padding: const EdgeInsets.all(10.0),
+                                      child: Column(
+                                        children: <Widget>[
+                                          Container(
+                                            child: topContent(
+                                                nama, deskripsi, source),
+                                          )
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            );
+                          })),
+                ),
+              ],
+            ),
+          )
+        ],
+      ),
     );
   }
 
@@ -307,8 +311,7 @@ class _HomePageState extends State<HomePage> {
               width: MediaQuery.of(context).size.width - 000,
               child: Text(
                 source,
-                style: TextStyle(
-                    color: Colors.white,
+                style: TextStyle(color: Colors.white,
                     fontSize: 14,
                     fontWeight: FontWeight.w400),
                 textAlign: TextAlign.end,
